@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="state" attr.type="string" />
+  <key id="d0" for="graph" attr.name="directed" attr.type="boolean" />
+  <graph edgedefault="directed">
+    <node id="-A INPUT -s 192.0.0.9 -d 192.0.0.10:192.0.0.12 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.36:192.0.0.37 -d 192.0.0.69 -p 7:255 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.10:192.0.0.12 -d 192.0.0.9 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.5:192.0.0.7 -d 192.0.0.8:192.0.0.9 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.8:192.0.0.9 -d 192.0.0.5:192.0.0.7 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.8 -d 192.0.0.9:192.0.0.12 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.9:192.0.0.12 -d 192.0.0.8 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.5:192.0.0.12 -d 192.0.0.36:192.0.0.39 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.36:192.0.0.39 -d 192.0.0.5:192.0.0.12 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <data key="d0">True</data>
+  </graph>
+</graphml>

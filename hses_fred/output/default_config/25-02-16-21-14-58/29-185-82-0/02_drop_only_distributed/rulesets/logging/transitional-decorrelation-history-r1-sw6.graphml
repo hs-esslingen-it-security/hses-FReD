@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="state" attr.type="string" />
+  <key id="d0" for="graph" attr.name="directed" attr.type="boolean" />
+  <graph edgedefault="directed">
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.71 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.36 -d 0.0.0.1:192.0.0.68 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.69 -d 192.0.0.70 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.69 -d 192.0.0.68 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.71 -d 192.0.0.70 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.71 -d 192.0.0.68 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.68:192.0.0.69 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.69:192.0.0.71 -p * --sport * --dport * -j ACCEPT">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 0:34963 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.7 -p 17 --sport 0:34963 --dport 0:34962 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.5 -d 192.0.0.70 -p 6 --sport * --dport 0:21 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.5 -d 192.0.0.70 -p 6 --sport * --dport 23:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 0:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 0:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 34965:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 34964:34979 --dport 0:34963 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 34964:34979 --dport 34965:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 0:16 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 18:255 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 0:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 0:34979 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 0:16 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.7 -p 17 --sport 0:34963 --dport 34981:65535 -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.6:255.255.255.255 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.6:192.0.0.70 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.72:255.255.255.255 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.6:192.0.0.67 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.70 -d 192.0.0.70 -p * --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 0:16 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 18:255 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 0:16 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <node id="-A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 18:255 --sport * --dport * -j DROP">
+      <data key="d1">active</data>
+    </node>
+    <data key="d0">True</data>
+  </graph>
+</graphml>

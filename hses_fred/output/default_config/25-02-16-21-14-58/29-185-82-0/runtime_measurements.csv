@@ -1,0 +1,12 @@
+method,runtime
+inplace,40.89060163497925
+perform_full_network_decorrelation,15.737265825271606
+get_paths_to_cover,0.38787364959716797
+perform_accept_only_distribution,0.19872593879699707
+compress_ruleset,8.297736167907715
+perform_network_wide_local_optimization,7.555771112442017
+compress_subgraph_ruleset,13.601969003677368
+get_targeted_subgraph_ruleset,18.801902294158936
+from_each_other,0.6058893203735352
+presorting_ruleset_distribution,23.01245903968811
+perform_presorted_global_optimization,23.466188192367554

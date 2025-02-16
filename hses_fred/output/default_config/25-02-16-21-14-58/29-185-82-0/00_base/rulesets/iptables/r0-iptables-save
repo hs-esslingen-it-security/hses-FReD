@@ -1,0 +1,83 @@
+# Generated on Sun Feb 16 21:14:58 2025
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.69 -p 6 --sport * --dport 80 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.69 -d 192.0.0.36 -p 6 --sport 80 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport * --dport 80 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport 80 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.5 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.37 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.69 -p 6 --sport * --dport 443 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.69 -d 192.0.0.37 -p 6 --sport 443 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport * --dport 80 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport 80 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.5 -p 6 --sport * --dport 554 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.39 -p 6 --sport 554 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.8 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.36 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 6 --sport * --dport 80 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 6 --sport 80 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.37 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.5 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.8 -p 6 --sport * --dport 80 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.36 -p 6 --sport 80 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 6 --sport * --dport 443 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 6 --sport 443 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.36 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.8 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.5 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.39 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport * --dport 443 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport 443 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.36 -p 6 --sport * --dport 443 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.8 -p 6 --sport 443 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.6 -d 192.0.0.39 -p 6 --sport * --dport 554 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.6 -p 6 --sport 554 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport * --dport 443 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport 443 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.5 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.36 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.7 -p 6 --sport * --dport 4840 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.37 -p 6 --sport 4840 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.8 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.37 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.36 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.7 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.36 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.36 -d 192.0.0.5 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.6 -p 6 --sport * --dport 554 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.6 -d 192.0.0.39 -p 6 --sport 554 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.39 -p 6 --sport * --dport 22 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.5 -p 6 --sport 22 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 17 --sport * --dport 34980 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 34980 --dport * -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.39 -p 6 --sport * --dport 554 -j ACCEPT
+-A INPUT -A INPUT -s 192.0.0.39 -d 192.0.0.5 -p 6 --sport 554 --dport * -j ACCEPT
+COMMIT
+# Completed on Sun Feb 16 21:14:58 2025

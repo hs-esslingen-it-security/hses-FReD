@@ -1,0 +1,39 @@
+# Generated on Sun Feb 16 21:16:09 2025
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 0:16 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 18:255 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 17 --sport 0:34979 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.37 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 0:16 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 18:255 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.36 -d 0.0.0.1:192.0.0.68 -p * --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 0:34963 -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.7 -p 17 --sport 0:34963 --dport 0:34962 -j DROP
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.70 -p 6 --sport * --dport 0:21 -j DROP
+-A INPUT -A INPUT -s 192.0.0.5 -d 192.0.0.70 -p 6 --sport * --dport 23:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 0:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.8 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 0:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 34965:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 0:34962 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 34964:34979 --dport 0:34963 -j DROP
+-A INPUT -A INPUT -s 192.0.0.7 -d 192.0.0.68 -p 17 --sport 34964:34979 --dport 34965:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 0:34979 --dport 0:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 0:34979 -j DROP
+-A INPUT -A INPUT -s 192.0.0.37 -d 192.0.0.68 -p 17 --sport 34981:65535 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.7 -p 17 --sport 0:34963 --dport 34981:65535 -j DROP
+-A INPUT -A INPUT -s 192.0.0.70 -d 192.0.0.6:192.0.0.67 -p * --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.70 -d 192.0.0.70 -p * --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.70 -d 192.0.0.72:255.255.255.255 -p * --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 0:16 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.7:192.0.0.8 -d 192.0.0.68 -p 18:255 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 0:16 --sport * --dport * -j DROP
+-A INPUT -A INPUT -s 192.0.0.68 -d 192.0.0.7:192.0.0.8 -p 18:255 --sport * --dport * -j DROP
+COMMIT
+# Completed on Sun Feb 16 21:16:09 2025
